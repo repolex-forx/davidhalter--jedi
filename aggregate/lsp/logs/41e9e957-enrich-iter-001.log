@@ -1,0 +1,101 @@
+[2026-04-13T08:25:11Z] === ENRICH ITERATION 1 START | repo=davidhalter/jedi sha=41e9e957 ===
+[2026-04-13T08:25:11Z] [iter=1] PHASE START: enrich repo=davidhalter/jedi sha=41e9e957 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/41e9e957-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/41e9e957e7fce02e63a41af66c9c891e33411569.nq.gz
+[2026-04-13T08:25:11Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-13T08:25:22Z] [iter=1] AST store loaded triples=1486667 load_secs=10 mem_mb=879 MB
+[2026-04-13T08:25:22Z] [iter=1] Step 2: Finding LSP targets mem_mb=879 MB
+[2026-04-13T08:25:24Z] [iter=1] LSP targets found call_sites=10558 imports=1344 extends=373 implements=0 secs=2
+[2026-04-13T08:25:26Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=879 MB
+[2026-04-13T08:25:34Z] [iter=1] Position index built positions=105066 nodes_with_types=132349 secs=8 mem_mb=879 MB
+[2026-04-13T08:25:34Z] [iter=1] Step 3: Starting LSP resolution mem_mb=879 MB already_completed_types=[] already_completed_files=0
+[2026-04-13T08:25:34Z] [iter=1] Resolving target type target_type=call_site count=10558
+[2026-04-13T08:26:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=1 resolved=6 errors=49 current=jedi/api/helpers.py
+[2026-04-13T08:26:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=2 resolved=46 errors=119 current=test/test_inference/test_imports.py
+[2026-04-13T08:28:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=3 resolved=98 errors=321 current=jedi/api/completion.py
+[2026-04-13T08:30:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.9 files_done=4 resolved=138 errors=447 current=jedi/api/__init__.py
+[2026-04-13T08:31:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=5 resolved=169 errors=570 current=jedi/inference/compiled/subprocess/functions.py
+[2026-04-13T08:32:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.9 files_done=7 resolved=211 errors=640 current=jedi/api/project.py
+[2026-04-13T08:32:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.7 files_done=8 resolved=245 errors=717 current=test/completion/stdlib.py
+[2026-04-13T08:33:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.2 files_done=9 resolved=308 errors=767 current=jedi/api/strings.py
+[2026-04-13T08:34:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=11 resolved=332 errors=828 current=test/test_api/test_interpreter.py
+[2026-04-13T08:35:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=12 resolved=409 errors=981 current=test/completion/invalid.py
+[2026-04-13T08:36:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=14 resolved=448 errors=1102 current=test/test_api/test_api.py
+[2026-04-13T08:38:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=15 resolved=473 errors=1242 current=test/completion/pep0484_typing.py
+[2026-04-13T08:38:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=16 resolved=488 errors=1294 current=test/test_api/test_classes.py
+[2026-04-13T08:40:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=17 resolved=524 errors=1474 current=test/run.py
+[2026-04-13T08:41:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.1 files_done=18 resolved=598 errors=1559 current=jedi/inference/recursion.py
+[2026-04-13T08:42:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=20 resolved=603 errors=1642 current=sith.py
+[2026-04-13T08:42:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.7 files_done=22 resolved=663 errors=1715 current=jedi/api/refactoring/__init__.py
+[2026-04-13T08:43:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.4 files_done=23 resolved=695 errors=1778 current=test/completion/comprehensions.py
+[2026-04-13T08:44:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.5 files_done=26 resolved=721 errors=1894 current=jedi/plugins/stdlib.py
+[2026-04-13T08:46:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.6 files_done=27 resolved=789 errors=2108 current=jedi/api/classes.py
+[2026-04-13T08:47:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.6 files_done=28 resolved=829 errors=2206 current=jedi/plugins/pytest.py
+[2026-04-13T08:48:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.3 files_done=29 resolved=841 errors=2280 current=test/test_inference/test_sys_path.py
+[2026-04-13T08:49:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.2 files_done=31 resolved=949 errors=2365 current=jedi/inference/names.py
+[2026-04-13T08:50:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.2 files_done=32 resolved=987 errors=2471 current=jedi/inference/value/klass.py
+[2026-04-13T08:51:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.2 files_done=33 resolved=1001 errors=2564 current=jedi/inference/compiled/mixed.py
+[2026-04-13T08:51:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.7 files_done=34 resolved=1026 errors=2621 current=test/completion/descriptors.py
+[2026-04-13T08:52:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.5 files_done=36 resolved=1034 errors=2697 current=conftest.py
+[2026-04-13T08:54:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.9 files_done=39 resolved=1082 errors=2842 current=jedi/inference/gradual/typeshed.py
+[2026-04-13T08:54:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.5 files_done=40 resolved=1107 errors=2896 current=test/completion/basic.py
+[2026-04-13T08:55:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.7 files_done=43 resolved=1167 errors=3016 current=test/completion/pep0484_generic_parameters.py
+[2026-04-13T08:56:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.3 files_done=44 resolved=1182 errors=3081 current=test/test_integration.py
+[2026-04-13T08:57:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.9 files_done=46 resolved=1192 errors=3138 current=jedi/api/environment.py
+[2026-04-13T08:57:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.4 files_done=47 resolved=1229 errors=3194 current=jedi/inference/syntax_tree.py
+[2026-04-13T09:00:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.9 files_done=48 resolved=1287 errors=3443 current=test/test_inference/test_signature.py
+[2026-04-13T09:01:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.1 files_done=50 resolved=1332 errors=3566 current=jedi/api/interpreter.py
+[2026-04-13T09:01:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.8 files_done=53 resolved=1350 errors=3633 current=jedi/inference/gradual/generics.py
+[2026-04-13T09:02:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.4 files_done=56 resolved=1361 errors=3696 current=test/completion/usages.py
+[2026-04-13T09:04:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.3 files_done=60 resolved=1428 errors=3882 current=jedi/inference/base_value.py
+[2026-04-13T09:05:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.3 files_done=61 resolved=1464 errors=3984 current=jedi/inference/compiled/value.py
+[2026-04-13T09:06:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.7 files_done=62 resolved=1490 errors=4128 current=test/completion/classes.py
+[2026-04-13T09:07:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.8 files_done=63 resolved=1509 errors=4232 current=scripts/memory_check.py
+[2026-04-13T09:10:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.0 files_done=67 resolved=1592 errors=4454 current=test/test_inference/test_docstring.py
+[2026-04-13T09:10:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.8 files_done=68 resolved=1613 errors=4536 current=test/test_inference/test_implicit_namespace_package.py
+[2026-04-13T09:11:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.6 files_done=70 resolved=1626 errors=4623 current=jedi/inference/docstrings.py
+[2026-04-13T09:12:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.2 files_done=71 resolved=1645 errors=4680 current=test/test_inference/test_extension.py
+[2026-04-13T09:13:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.2 files_done=74 resolved=1674 errors=4779 current=jedi/inference/param.py
+[2026-04-13T09:13:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.7 files_done=75 resolved=1694 errors=4830 current=jedi/inference/context.py
+[2026-04-13T09:14:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.4 files_done=76 resolved=1712 errors=4897 current=test/test_inference/test_pyc.py
+[2026-04-13T09:15:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.0 files_done=79 resolved=1744 errors=4960 current=jedi/inference/value/function.py
+[2026-04-13T09:16:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.3 files_done=80 resolved=1763 errors=5090 current=test/static_analysis/star_arguments.py
+[2026-04-13T09:17:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.9 files_done=82 resolved=1779 errors=5151 current=jedi/file_io.py
+[2026-04-13T09:17:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.8 files_done=85 resolved=1821 errors=5235 current=test/completion/decorators.py
+[2026-04-13T09:19:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.9 files_done=87 resolved=1854 errors=5352 current=setup.py
+[2026-04-13T09:19:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.7 files_done=91 resolved=1889 errors=5426 current=test/test_api/test_completion.py
+[2026-04-13T09:20:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.5 files_done=92 resolved=1925 errors=5508 current=jedi/inference/analysis.py
+[2026-04-13T09:21:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.1 files_done=95 resolved=1960 errors=5565 current=jedi/inference/filters.py
+[2026-04-13T09:21:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.6 files_done=96 resolved=1987 errors=5617 current=jedi/inference/value/instance.py
+[2026-04-13T09:23:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.0 files_done=97 resolved=2035 errors=5761 current=test/test_inference/test_compiled.py
+[2026-04-13T09:23:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.7 files_done=100 resolved=2055 errors=5833 current=jedi/api/refactoring/extract.py
+[2026-04-13T09:24:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.4 files_done=101 resolved=2072 errors=5903 current=test/completion/lambdas.py
+[2026-04-13T09:25:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.5 files_done=105 resolved=2079 errors=6008 current=test/completion/dynamic_arrays.py
+[2026-04-13T09:26:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.2 files_done=106 resolved=2107 errors=6079 current=jedi/debug.py
+[2026-04-13T09:27:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.0 files_done=110 resolved=2160 errors=6162 current=test/refactor/rename.py
+[2026-04-13T09:28:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.9 files_done=113 resolved=2205 errors=6255 current=jedi/inference/gradual/annotation.py
+[2026-04-13T09:29:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.0 files_done=114 resolved=2225 errors=6363 current=test/completion/generators.py
+[2026-04-13T09:29:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.6 files_done=116 resolved=2299 errors=6420 current=jedi/inference/__init__.py
+[2026-04-13T09:30:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.2 files_done=118 resolved=2306 errors=6478 current=jedi/__main__.py
+[2026-04-13T09:30:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.8 files_done=123 resolved=2344 errors=6539 current=jedi/inference/value/namespace.py
+[2026-04-13T09:31:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.4 files_done=127 resolved=2397 errors=6605 current=test/completion/types.py
+[2026-04-13T09:32:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.1 files_done=134 resolved=2428 errors=6669 current=jedi/inference/gradual/typing.py
+[2026-04-13T09:33:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.1 files_done=135 resolved=2440 errors=6778 current=test/test_api/test_analysis.py
+[2026-04-13T09:33:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.7 files_done=137 resolved=2470 errors=6830 current=jedi/plugins/__init__.py
+[2026-04-13T09:34:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.2 files_done=141 resolved=2497 errors=6887 current=jedi/utils.py
+[2026-04-13T09:35:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.8 files_done=147 resolved=2557 errors=6949 current=test/test_inference/test_stdlib.py
+[2026-04-13T09:35:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.4 files_done=150 resolved=2585 errors=7010 current=test/completion/dynamic_params.py
+[2026-04-13T09:36:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.1 files_done=155 resolved=2598 errors=7071 current=jedi/inference/value/dynamic_arrays.py
+[2026-04-13T09:36:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.6 files_done=159 resolved=2610 errors=7123 current=docs/conf.py
+[2026-04-13T09:37:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.1 files_done=164 resolved=2634 errors=7178 current=test/test_api/test_usages.py
+[2026-04-13T09:37:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.7 files_done=168 resolved=2656 errors=7232 current=test/test_inference/test_buildout_detection.py
+[2026-04-13T09:38:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.2 files_done=175 resolved=2710 errors=7292 current=test/completion/thirdparty/jedi_.py
+[2026-04-13T09:38:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.8 files_done=184 resolved=2735 errors=7341 current=test/completion/complex.py
+[2026-04-13T09:39:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.3 files_done=194 resolved=2754 errors=7395 current=test/completion/imports.py
+[2026-04-13T09:39:57Z] [iter=1] Target type resolved target_type=call_site resolved=2785 errors=7436 secs=4464 mem_mb=879 MB
+[2026-04-13T09:39:57Z] [iter=1] Resolving target type target_type=import_statement count=1344
+[2026-04-13T09:40:02Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=74.9 files_done=3 resolved=18 errors=0 current=test/test_inference/test_gradual/test_typeshed.py
+[2026-04-13T09:40:10Z] [iter=1] Target type resolved target_type=import_statement resolved=1240 errors=0 secs=13 mem_mb=879 MB
+[2026-04-13T09:40:10Z] [iter=1] Resolving target type target_type=extends_clause count=373
+[2026-04-13T09:40:13Z] [iter=1] Target type resolved target_type=extends_clause resolved=372 errors=0 secs=3 mem_mb=879 MB
+[2026-04-13T09:40:24Z] [iter=1] Step 5: Writing final enrichment file triples=117620
+[2026-04-13T09:40:26Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/41e9e957e7fce02e63a41af66c9c891e33411569.nq.gz size_kb=2630
+[2026-04-13T09:40:26Z] [iter=1] PHASE END: enrich elapsed_s=4515 elapsed_min=75.3 total_triples=117620
